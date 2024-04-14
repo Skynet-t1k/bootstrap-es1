@@ -1,0 +1,22 @@
+body {
+    margin-top: 10px;
+}
+
+.imgRicette {
+    height: 80%;
+    width: 100%;
+}
+
+.imgIcon {
+    height: 30px;
+    width: 50px;
+}
+
+.extraMargin {
+   margin-top: 20vh;
+}
+
+.inner-container {
+    padding: 20px; 
+    background: #fff;
+  }
