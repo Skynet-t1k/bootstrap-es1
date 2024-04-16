@@ -11,104 +11,39 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- NavBar-->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
-              class="imgIcon"
-              src="./media/smallIcon.jpg"
-              alt="small sicily icon"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Ricette</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <!-- <li class="nav-item mx-2">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav
+      class="d-flex justify-content-between position-fixed w-100 top-0 align-items-center"
+    >
+      <img class="imgIcon" src="./media/smallIcon.jpg" alt="sicily icon" />
+      <ul class="listLink d-flex">
+        <li class="mx-3"><a class="listUnder" href="">Tutte le Ricette</a></li>
+        <li class="mx-3"><a class="listUnder" href="">Chi siamo</a></li>
+        <li class="mx-3"><a class="listUnder" href="">Lavora Con noi</a></li>
+      </ul>
+    </nav>
     <!-- Fine NavBar-->
 
-    <!-- Hero Section-->
-    <div class="container my-5">
-      <div
-        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
-      >
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-            Ricette di Sicilia
-          </h1>
-          <p class="lead">
-            Sotto un cielo zaffiro reso raggiante da un sole ardente,<br />
-            la Sicilia culla sapori dal cuore fervente.<br />
-            Tra ulivi danzanti e mare incantato,<br />
-            il profumo della caponata, un assaggio obbligato. <br />
-            Ogni piatto un racconto, ogni sapore un viaggio,<br />
-            la Sicilia nel cuore, in ogni assaggio.<br />
-            Un'ode alla terra di sole, mare e vento,<br />
-            dove cucinare è arte, è puro sentimento.<br />
-          </p>
-
-          <div
-            class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
-          >
-            <!-- Ho eliminato i button dall'hero section-->
-            <!-- <button
-              type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-            >
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button> -->
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img
-            class="rounded-lg-3"
-            src="./media/GialloZ.png"
-            alt=""
-            width="720"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- Fine Hero Section-->
+    <header class="vh-100 d-flex box justify-content-center align-items-center">
+      <h1 class="custom-h1">Blog di Ricette</h1>
+    </header>
 
     <!-- Section Ricette-->
-    <div class="container">
+    <div class="d-flex extraMargin">
       <div class="row">
         <!-- Ricetta 1-->
-        <div class="col-lg-4 text-center">
+        <div class="col-12 col-lg-4 text-center">
           <div class="inner-container shadow">
             <a
               href="https://ricette.giallozafferano.it/Cannoli-siciliani.html"
@@ -127,7 +62,7 @@
           </div>
         </div>
         <!-- Ricetta 2-->
-        <div class="col-lg-4 text-center">
+        <div class="col-12 col-lg-4 text-center">
           <div class="inner-container shadow">
             <a
               href="https://ricette.giallozafferano.it/Caponata.html"
@@ -146,7 +81,7 @@
           </div>
         </div>
         <!-- Ricetta 3-->
-        <div class="col-lg-4 text-center">
+        <div class="col-12 col-lg-4 text-center">
           <div class="inner-container shadow">
             <a
               href="https://ricette.giallozafferano.it/Arancini-di-riso.html"
@@ -169,16 +104,16 @@
     <!-- Fine Section Ricette-->
 
     <!-- Bootstrap Footer-->
-    <div class="container extraMargin">
-      <footer class="bg-light text-center text-lg-start">
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          © 2024 Blog di Ricette
-        </div>
-      </footer>
-    </div>
+    <footer
+      class="d-flex bg-light text-center text-lg-start justify-content-center extraMargin"
+    >
+      <div
+        class="text-center p-3 w-100"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2024 Blog di Ricette
+      </div>
+    </footer>
 
     <!-- Bootstrap script-->
     <script
@@ -186,6 +121,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
